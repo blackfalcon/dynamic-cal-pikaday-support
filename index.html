@@ -3,12 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Have date and set it too!</title>
+        <title>Fun with Calendars</title>
+        <link rel="stylesheet" href="pikaday.css">
         <style>
-            .display-cal-value {
-                margin-top: 20px;
-            }
-
             .hide {
                 position: absolute;
                 width: 1px;
@@ -23,7 +20,11 @@
     </head>
     <body>
         <input id="event-date" type="date" class="hide" />
-        <div id="display-cal-value" class="display-cal-value"></div>
+        <div id="display-cal-value"></div>
+        <div id="cal-container" class="cal-container"></div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+        <script src="pikaday.js"></script>
 
         <script>
             // function that converts month value to named string
